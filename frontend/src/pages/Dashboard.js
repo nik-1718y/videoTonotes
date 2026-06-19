@@ -16,7 +16,7 @@ function Dashboard() {
   const handleDelete = async (id) => {
     try {
       // await axios.delete(`http://localhost:5000/notes/${id}`);
-      await axios.delete(`https://videotonotes-1.onrender.com/${id}`);
+      await axios.delete(`https://videotonotes-1.onrender.com/notes/${id}`);
       setNotes(notes.filter((note) => note._id !== id));
     } catch (err) {
       console.log(err);
@@ -26,7 +26,7 @@ function Dashboard() {
   const fetchNotes = async () => {
     try {
       // const res = await axios.get("http://localhost:5000/notes");
-      const res = await axios.get("https://videotonotes-1.onrender.com");
+      const res = await axios.get("https://videotonotes-1.onrender.com/notes");
       setNotes(res.data.data);
     } catch (err) {
       console.log(err);
