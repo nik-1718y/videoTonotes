@@ -24,7 +24,8 @@ function Upload() {
       setLoading(true);
 
       const res = await axios.post(
-        "http://localhost:5000/upload",
+        // "http://localhost:5000/upload",
+        "https://videotonotes-1.onrender.com",
         formData
       );
 

@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-import Dashboard from "./pages/Dashboard";
+import Login from "./pages/Login.js";
+import Register from "./pages/Register.js";
+import Dashboard from "./pages/Dashboard.js";
 import Upload from "./pages/Upload";
-import NoteDetail from "./pages/NoteDetail";
+import NoteDetail from "./pages/NoteDetail.js";
 
 function App() {
   return (

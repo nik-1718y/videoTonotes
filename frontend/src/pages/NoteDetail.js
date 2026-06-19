@@ -12,7 +12,8 @@ function NoteDetail() {
 
   const fetchNote = async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/notes/${id}`);
+      // const res = await axios.get(`http://localhost:5000/notes/${id}`);
+      const res = await axios.get(`https://videotonotes-1.onrender.com/${id}`);
       setNote(res.data.data);
     } catch (err) {
       console.log(err);

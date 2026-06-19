@@ -12,7 +12,9 @@ function Register() {
 
   const handleRegister = async () => {
     try {
-      await axios.post("http://localhost:5000/auth/register", {
+      // await axios.post("http://localhost:5000/auth/register",
+       await axios.post("https://videotonotes-1.onrender.com",  
+        {
         name,
         email,
         password,
